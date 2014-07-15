@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="31"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending One View Controller-->
         <scene sceneID="Tod-ut-c4K">
             <objects>
-                <viewController id="ooJ-Gj-s8z" sceneMemberID="viewController">
+                <viewController id="ooJ-Gj-s8z" customClass="EndingOneViewController" customModule="MMHS_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QBI-52-omk"/>
                         <viewControllerLayoutGuide type="bottom" id="2Ba-Dh-Jej"/>
@@ -192,17 +192,36 @@
                     <view key="view" contentMode="scaleToFill" id="zCn-Xa-b7H">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-Xt-wOo">
+                                <rect key="frame" x="102" y="84" width="276" height="189"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="Njg-3j-M8s"/>
+                                    <constraint firstAttribute="width" constant="276" id="zxG-Cj-mOR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qE4-Xt-wOo" secondAttribute="centerX" id="3YA-Ug-asL"/>
+                            <constraint firstItem="qE4-Xt-wOo" firstAttribute="top" secondItem="zCn-Xa-b7H" secondAttribute="top" constant="84" id="9cs-dK-KYV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="qE4-Xt-wOo" id="CrH-A1-OXC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gt-vx-FcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2450" y="-304"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Two View Controller-->
         <scene sceneID="UXp-le-csf">
             <objects>
-                <viewController id="D2S-XP-Ghe" sceneMemberID="viewController">
+                <viewController id="D2S-XP-Ghe" customClass="EndingTwoViewController" customModule="MMHS_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R0K-zm-wFo"/>
                         <viewControllerLayoutGuide type="bottom" id="4f8-FC-riH"/>
@@ -210,8 +229,27 @@
                     <view key="view" contentMode="scaleToFill" id="B82-Z0-oIG">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ynL-qi-B0R">
+                                <rect key="frame" x="102" y="97" width="276" height="189"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="8Ka-TF-5me"/>
+                                    <constraint firstAttribute="height" constant="189" id="Rjy-ww-zcx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ynL-qi-B0R" firstAttribute="top" secondItem="B82-Z0-oIG" secondAttribute="top" constant="97" id="A8T-iy-0yJ"/>
+                            <constraint firstAttribute="centerX" secondItem="ynL-qi-B0R" secondAttribute="centerX" id="yPt-Id-Vwt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="ynL-qi-B0R" id="Tb5-cW-DQg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfD-Nw-Tjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,10 +291,10 @@
             </objects>
             <point key="canvasLocation" x="2450" y="1323"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="U9d-b9-fBL">
             <objects>
-                <viewController id="aAs-SB-ncD" sceneMemberID="viewController">
+                <viewController id="aAs-SB-ncD" customClass="ThirdViewController" customModule="MMHS_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEe-MW-0JW"/>
                         <viewControllerLayoutGuide type="bottom" id="PWC-aB-1SR"/>
@@ -304,6 +342,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="vid-7x-bD6" id="uWo-tT-RBw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jr1-eq-dVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

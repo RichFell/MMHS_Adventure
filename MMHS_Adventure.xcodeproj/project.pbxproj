@@ -15,6 +15,10 @@
 		9B351804197488170038C1B6 /* MMHS_AdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B351803197488170038C1B6 /* MMHS_AdventureTests.swift */; };
 		9BF8A4361975D02800C60CF1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A4351975D02800C60CF1 /* SecondViewController.swift */; };
 		9BF8A4381975D04600C60CF1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A4371975D04600C60CF1 /* ThirdViewController.swift */; };
+		9BF8A43A1975D89800C60CF1 /* EndingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A4391975D89800C60CF1 /* EndingOneViewController.swift */; };
+		9BF8A43C1975D8A800C60CF1 /* EndingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A43B1975D8A800C60CF1 /* EndingTwoViewController.swift */; };
+		9BF8A43E1975D8B900C60CF1 /* EndingThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A43D1975D8B900C60CF1 /* EndingThreeViewController.swift */; };
+		9BF8A4401975D8C700C60CF1 /* EndingFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A43F1975D8C700C60CF1 /* EndingFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		9B351803197488170038C1B6 /* MMHS_AdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHS_AdventureTests.swift; sourceTree = "<group>"; };
 		9BF8A4351975D02800C60CF1 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 		9BF8A4371975D04600C60CF1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+		9BF8A4391975D89800C60CF1 /* EndingOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingOneViewController.swift; path = ../EndingOneViewController.swift; sourceTree = "<group>"; };
+		9BF8A43B1975D8A800C60CF1 /* EndingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingTwoViewController.swift; path = ../EndingTwoViewController.swift; sourceTree = "<group>"; };
+		9BF8A43D1975D8B900C60CF1 /* EndingThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingThreeViewController.swift; path = ../EndingThreeViewController.swift; sourceTree = "<group>"; };
+		9BF8A43F1975D8C700C60CF1 /* EndingFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingFourViewController.swift; path = ../EndingFourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 				9B3517F2197488170038C1B6 /* ViewController.swift */,
 				9BF8A4351975D02800C60CF1 /* SecondViewController.swift */,
 				9BF8A4371975D04600C60CF1 /* ThirdViewController.swift */,
+				9BF8A4391975D89800C60CF1 /* EndingOneViewController.swift */,
+				9BF8A43B1975D8A800C60CF1 /* EndingTwoViewController.swift */,
+				9BF8A43D1975D8B900C60CF1 /* EndingThreeViewController.swift */,
+				9BF8A43F1975D8C700C60CF1 /* EndingFourViewController.swift */,
 				9B3517F4197488170038C1B6 /* Main.storyboard */,
 				9B3517F7197488170038C1B6 /* Images.xcassets */,
 				9B3517EF197488170038C1B6 /* MMHS_Adventure.xcdatamodeld */,
@@ -219,9 +231,13 @@
 			files = (
 				9BF8A4361975D02800C60CF1 /* SecondViewController.swift in Sources */,
 				9B3517F3197488170038C1B6 /* ViewController.swift in Sources */,
+				9BF8A43A1975D89800C60CF1 /* EndingOneViewController.swift in Sources */,
 				9BF8A4381975D04600C60CF1 /* ThirdViewController.swift in Sources */,
+				9BF8A4401975D8C700C60CF1 /* EndingFourViewController.swift in Sources */,
 				9B3517EE197488170038C1B6 /* AppDelegate.swift in Sources */,
 				9B3517F1197488170038C1B6 /* MMHS_Adventure.xcdatamodeld in Sources */,
+				9BF8A43E1975D8B900C60CF1 /* EndingThreeViewController.swift in Sources */,
+				9BF8A43C1975D8A800C60CF1 /* EndingTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

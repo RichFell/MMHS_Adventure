@@ -47,12 +47,13 @@ class ViewController: UIViewController {
     {
         if segue.identifier == "Segue_scene1_1"
         {
-            var secondVC = segue.destinationViewController as SecondViewController
+            let secondVC = segue.destinationViewController as SecondViewController
             secondVC.name = name
         }
         else
         {
-            
+            let thirdVC = segue.destinationViewController as ThirdViewController
+            thirdVC.name = name
         }
     }
 

@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  EndingTwoViewController.swift
 //  MMHS_Adventure
 //
 //  Created by Richard Fellure on 7/15/14.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class EndingTwoViewController: UIViewController {
 
     var name = String()
 
     @IBOutlet var textView: UITextView
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textView.text = "Erring towards caution \(name) decided to just head home and not investigate the eerie voice.  "
-
-
+        textView.text = "Bad karma is never a good thing. After leaving the poor injured bird \(name) slipped on some wet concrete and broke their leg. "
     }
 
 }

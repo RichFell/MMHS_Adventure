@@ -13,12 +13,14 @@ class EndingThreeViewController: UIViewController {
     @IBOutlet var textView: UITextView
 
     var name = String()
+    var titleString = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         textView.text = "It turns out that Sam wanted to talk about a new business opportunity. Being smart \(name) took this opportunity. Today \(name) enjoys being one of the youngest billionaires in the world"
 
+        navigationItem.title = titleString
     }
 
 }

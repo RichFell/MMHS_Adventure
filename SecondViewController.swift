@@ -11,13 +11,18 @@ import UIKit
 class SecondViewController: UIViewController {
 
     var name = String()
+    var titleString = String()
 
+    @IBOutlet var buttonOne: UIButton
+    @IBOutlet var buttonTwo: UIButton
     @IBOutlet var textView: UITextView
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
         textView.text = "\(name) never heard the expression 'Curiosity killed the cat', so \(name) decided to investigate the eerie voice. As \(name) got closer it became apparent that the voice belonged to an injured parate.. What does \(name) do next?"
+
+        navigationItem.title = titleString
 
     }
 
@@ -28,12 +33,14 @@ class SecondViewController: UIViewController {
             let endingOneVC = segue.destinationViewController as EndingOneViewController
 
             endingOneVC.name = name
+            endingOneVC.titleString = buttonOne.titleLabel.text
         }
         else
         {
             let endingTwoVC = segue.destinationViewController as EndingTwoViewController
 
             endingTwoVC.name = name
+            endingTwoVC.titleString = buttonTwo.titleLabel.text
         }
     }
 }

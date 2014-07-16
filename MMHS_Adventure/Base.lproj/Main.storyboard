@@ -174,6 +174,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOne" destination="b2w-E3-0ap" id="IcN-5K-uwl"/>
+                        <outlet property="buttonTwo" destination="7HN-eF-tkv" id="y4S-IV-8pz"/>
                         <outlet property="textView" destination="HL2-4b-Llf" id="zv8-F7-QQS"/>
                     </connections>
                 </viewController>
@@ -389,6 +391,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOne" destination="fyS-VZ-GvF" id="D8b-ZQ-CcW"/>
+                        <outlet property="buttonTwo" destination="YTH-mS-T31" id="PKD-17-AaO"/>
                         <outlet property="textView" destination="vid-7x-bD6" id="uWo-tT-RBw"/>
                     </connections>
                 </viewController>
@@ -412,7 +416,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRe-mO-ZJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="1003"/>
+            <point key="canvasLocation" x="666" y="475"/>
         </scene>
     </scenes>
 </document>

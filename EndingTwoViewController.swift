@@ -11,6 +11,7 @@ import UIKit
 class EndingTwoViewController: UIViewController {
 
     var name = String()
+    var titleString = String()
 
     @IBOutlet var textView: UITextView
 
@@ -18,6 +19,7 @@ class EndingTwoViewController: UIViewController {
         super.viewDidLoad()
 
         textView.text = "Bad karma is never a good thing. After leaving the poor injured bird \(name) slipped on some wet concrete and broke their leg. "
+        navigationItem.title = titleString
     }
 
 }

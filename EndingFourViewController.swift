@@ -12,11 +12,14 @@ class EndingFourViewController: UIViewController {
 
     @IBOutlet var textView: UITextView
     var name = String()
+    var titleString = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         textView.text = "Seeing as how \(name) is not an outgoing person, and never wants to leave their comfort zone they will enjoy living the rest of their life living with their 25 cats and working a job that they hate."
+
+        navigationItem.title = titleString
     }
 
 }

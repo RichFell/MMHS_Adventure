@@ -49,11 +49,14 @@ class ViewController: UIViewController {
         {
             let secondVC = segue.destinationViewController as SecondViewController
             secondVC.name = name
+            secondVC.titleString = buttonOne.titleLabel.text
         }
         else
         {
             let thirdVC = segue.destinationViewController as ThirdViewController
             thirdVC.name = name
+
+            thirdVC.titleString = buttonTwo.titleLabel.text
         }
     }
 

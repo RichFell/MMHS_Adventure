@@ -8,20 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+@objc(ViewController) class ViewController: UIViewController {
                             
     @IBOutlet var nameLabel: UILabel
     @IBOutlet var nameTextField: UITextField
     @IBOutlet var buttonOne: UIButton
     @IBOutlet var buttonTwo: UIButton
     @IBOutlet var textView: UITextView
+    @IBOutlet var imageView: UIImageView
     var name = String()
+    var titleString = String()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         textView.hidden = true
         buttonOne.hidden = true
         buttonTwo.hidden = true
+        imageView.hidden = true
+    }
+
+    @IBAction func unwindSegue(segue:UIStoryboardSegue)
+    {
+        
     }
 
     @IBAction func onButtonPressedAddName(sender: AnyObject)
@@ -36,6 +45,7 @@ class ViewController: UIViewController {
         textView.hidden = false
         buttonTwo.hidden = false
         buttonOne.hidden = false
+        imageView.hidden = false
 
         nameLabel.hidden = true
         nameTextField.hidden = true
@@ -59,6 +69,4 @@ class ViewController: UIViewController {
             thirdVC.titleString = buttonTwo.titleLabel.text
         }
     }
-
 }
-

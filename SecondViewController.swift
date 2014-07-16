@@ -20,7 +20,7 @@ class SecondViewController: UIViewController {
     {
         super.viewDidLoad()
 
-        textView.text = "\(name) never heard the expression 'Curiosity killed the cat', so \(name) decided to investigate the eerie voice. As \(name) got closer it became apparent that the voice belonged to an injured parate.. What does \(name) do next?"
+        textView.text = "\(name) never heard the expression 'Curiosity killed the cat', so \(name) decided to investigate the eerie voice. As \(name) got closer it became apparent that the voice belonged to an injured parrot.. What does \(name) do next?"
 
         navigationItem.title = titleString
 

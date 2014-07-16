@@ -48,6 +48,7 @@
 		9BF8A43B1975D8A800C60CF1 /* EndingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingTwoViewController.swift; path = ../EndingTwoViewController.swift; sourceTree = "<group>"; };
 		9BF8A43D1975D8B900C60CF1 /* EndingThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingThreeViewController.swift; path = ../EndingThreeViewController.swift; sourceTree = "<group>"; };
 		9BF8A43F1975D8C700C60CF1 /* EndingFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingFourViewController.swift; path = ../EndingFourViewController.swift; sourceTree = "<group>"; };
+		9BF8A4711976F83200C60CF1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 			children = (
 				9B3517ED197488170038C1B6 /* AppDelegate.swift */,
 				9B3517F2197488170038C1B6 /* ViewController.swift */,
+				9BF8A4711976F83200C60CF1 /* Header.h */,
 				9BF8A4351975D02800C60CF1 /* SecondViewController.swift */,
 				9BF8A4371975D04600C60CF1 /* ThirdViewController.swift */,
 				9BF8A4391975D89800C60CF1 /* EndingOneViewController.swift */,

@@ -16,7 +16,7 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textView.text = "Erring towards caution \(name) decided to just head home and not investigate the eerie voice.  "
+        textView.text = "Erring towards caution \(name) decided to just head home and not investigate the eerie voice. On \(name)'s way home they ran into an old friend named Sam. Sam asked \(name) to go get some coffee and catch up... What does \(name) do? "
 
 
     }

@@ -146,7 +146,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="D2S-XP-Ghe" kind="show" id="n11-56-Xkg"/>
+                                    <segue destination="D2S-XP-Ghe" kind="show" identifier="Segue_ToEnding2" id="n11-56-Xkg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-E3-0ap">
@@ -159,7 +159,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ooJ-Gj-s8z" kind="show" id="POU-CU-06h"/>
+                                    <segue destination="ooJ-Gj-s8z" kind="show" identifier="Segue_ToEnding1" id="POU-CU-06h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -255,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="2450" y="238"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Three View Controller-->
         <scene sceneID="kpz-ni-DG3">
             <objects>
-                <viewController id="whT-t6-aKL" sceneMemberID="viewController">
+                <viewController id="whT-t6-aKL" customClass="EndingThreeViewController" customModule="MMHS_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jdm-9P-AXE"/>
                         <viewControllerLayoutGuide type="bottom" id="rK8-sK-smG"/>
@@ -266,17 +266,36 @@
                     <view key="view" contentMode="scaleToFill" id="tZx-dG-v0T">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-XA-vkS">
+                                <rect key="frame" x="102" y="78" width="276" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="jTF-w3-jg8"/>
+                                    <constraint firstAttribute="height" constant="164" id="p6O-nX-vZn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oFC-XA-vkS" secondAttribute="centerX" id="OBG-6u-O4a"/>
+                            <constraint firstItem="oFC-XA-vkS" firstAttribute="top" secondItem="tZx-dG-v0T" secondAttribute="top" constant="78" id="QLF-oU-lUq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="oFC-XA-vkS" id="d3E-Wb-zOt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5H-4b-DJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2452" y="785"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Four View Controller-->
         <scene sceneID="wkB-ha-Ogs">
             <objects>
-                <viewController id="6j2-mL-3jh" sceneMemberID="viewController">
+                <viewController id="6j2-mL-3jh" customClass="EndingFourViewController" customModule="MMHS_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bVa-Wj-hke"/>
                         <viewControllerLayoutGuide type="bottom" id="nPi-W4-vmY"/>
@@ -284,8 +303,27 @@
                     <view key="view" contentMode="scaleToFill" id="adW-2E-CC5">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-qG-FbK">
+                                <rect key="frame" x="102" y="79" width="276" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="R11-B3-cAN"/>
+                                    <constraint firstAttribute="height" constant="164" id="dq7-6X-ISF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sfs-qG-FbK" firstAttribute="top" secondItem="adW-2E-CC5" secondAttribute="top" constant="79" id="oKg-Q6-di4"/>
+                            <constraint firstAttribute="centerX" secondItem="Sfs-qG-FbK" secondAttribute="centerX" id="sz3-3Y-jci"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Sfs-qG-FbK" id="CVH-HE-8VN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVI-ta-EVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,20 +341,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-VZ-GvF">
-                                <rect key="frame" x="210" y="368" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTH-mS-T31">
+                                <rect key="frame" x="176" y="411" width="128" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Bqn-ZD-JUc"/>
-                                    <constraint firstAttribute="height" constant="30" id="xBC-cq-PVZ"/>
+                                    <constraint firstAttribute="width" constant="128" id="IQq-FA-Dhi"/>
+                                    <constraint firstAttribute="height" constant="30" id="PKw-4c-Wj2"/>
                                 </constraints>
-                                <state key="normal" title="Option 1">
+                                <state key="normal" title="Take a Rain Check">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="whT-t6-aKL" kind="show" id="wXv-Zm-Cch"/>
+                                    <segue destination="6j2-mL-3jh" kind="show" identifier="Segue_ToEnding4" id="9WQ-Y7-KTV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vid-7x-bD6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="The text for the story will go here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vid-7x-bD6">
                                 <rect key="frame" x="102" y="109" width="276" height="164"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -326,21 +364,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTH-mS-T31">
-                                <rect key="frame" x="210" y="411" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-VZ-GvF">
+                                <rect key="frame" x="195" y="368" width="91" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PKw-4c-Wj2"/>
-                                    <constraint firstAttribute="width" constant="60" id="cUb-rp-PEW"/>
+                                    <constraint firstAttribute="width" constant="91" id="8AL-Oi-Avb"/>
+                                    <constraint firstAttribute="height" constant="30" id="xBC-cq-PVZ"/>
                                 </constraints>
-                                <state key="normal" title="Option 1">
+                                <state key="normal" title="Go With Sam">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6j2-mL-3jh" kind="show" id="9WQ-Y7-KTV"/>
+                                    <segue destination="whT-t6-aKL" kind="show" identifier="Segue_ToEnding3" id="wXv-Zm-Cch"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fyS-VZ-GvF" secondAttribute="centerX" id="B4r-E0-vWn"/>
+                            <constraint firstItem="vid-7x-bD6" firstAttribute="top" secondItem="gS4-Q5-wDv" secondAttribute="top" constant="109" id="DWj-6V-M78"/>
+                            <constraint firstItem="YTH-mS-T31" firstAttribute="top" secondItem="gS4-Q5-wDv" secondAttribute="top" constant="411" id="HEM-pw-aqP"/>
+                            <constraint firstAttribute="centerX" secondItem="YTH-mS-T31" secondAttribute="centerX" id="eZX-rb-rWX"/>
+                            <constraint firstItem="fyS-VZ-GvF" firstAttribute="top" secondItem="gS4-Q5-wDv" secondAttribute="top" constant="368" id="p0d-7o-2vm"/>
+                            <constraint firstAttribute="centerX" secondItem="vid-7x-bD6" secondAttribute="centerX" id="vnT-gO-N5n"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="vid-7x-bD6" id="uWo-tT-RBw"/>
